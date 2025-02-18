@@ -270,7 +270,7 @@ header nav .hamburger .line {
 }
 
 .hamburger.open .line:nth-child(2) {
-  transform: translateX(-50px);
+  transform: translateX(-40px);
   opacity: 0;
   background-color: var(--hover-text-color);
 }
