@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="images/image.png">
+
+  <!-- ------------------------ browser header color ------------------------- -->
+  <meta name="theme-color" content="#eac4d5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
+  
+
+  <title>Portfolio</title>
+
+  <!-- ------------------------------ tailwind ------------------------------ -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+  <!-- ---------------------------- custom styles ---------------------------- -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ------------------------------ aos.js ------------------------------ -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+
+  <!-- ------------------------------ lucide ------------------------------ -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- ------------------------------ boxicons ------------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="grid-pattern"></div>
+
+  <!-- ------------------------------ header ------------------------------ -->
+  <header class="header">
+    <nav>
+      <a href="#" class="gradient-text">RS</a>
+      <label class="theme-switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+      
+      <ul class="links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Project">Project</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Menu -->
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- -------------------------------- Hero --------------------------------- -->
+  <section id="Home" class="hero">
+    <div class="container">
+      <div class="profile-container" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="rotating-border rotating-border-1"></div>
+        <div class="rotating-border rotating-border-2"></div>
+
+        <!-- Floating Elements (icons) -->
+        <i data-lucide="code" class="floating-icon floating-icon-1"></i>
+        <i data-lucide="star" class="floating-icon floating-icon-2"></i>
+        <i data-lucide="briefcase" class="floating-icon floating-icon-3"></i>
+
+
+        <!-- Profile Image -->
+        <div class="profile-img">
+          <img src="./images/profile.webp" alt="Profile">
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="text-content">
+        <div class="available-hire" data-aos="fade-up" data-aos-delay="800">
+          <span class="dot-circle"></span>
+          Available for hire
+        </div>
+        <div class="profile-title" data-aos="zoom-in" data-aos-duration="1000">
+          <h1 class="title-name">Hi, I'm <span class="gradient-text">Raj Shekhar</span></h1>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+          <p class="subtitle">Full Stack Developer & UI/UX Enthusiast</p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" class="icon" data-tooltip="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="icon" data-tooltip="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <!-- Download CV Button -->
+          <div class="download-cv" data-aos="fade-up" data-aos-delay="600">
+            <a href="#" class="btn">Download CV</a>
+          </div>
+        </div>
+
+
+        <!-- Scroll Down Button -->
+        <div class="scroll-down" onclick="scrollToSection()">
+          <i data-lucide="chevron-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="blobs">
+      <!-- <div class="grid-pattern"></div> -->
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
+  </section>
+  <!-- ------------------------- End of Hero Section ------------------------- -->
+
+
+  <!-- ------------------------------ About ------------------------------ -->
+
+  <section class="about space" id="About">
+    <div class="section-title" data-aos="fade-up">
+      <h2 class="title"><i data-lucide="user" class="title-icon"></i>About Me</h2>
+    </div>
+    <div class="container">
+      <div class="left grid">
+        <div class="image-section" data-aos="zoom-in" data-aos-duration="1000">
+          <span><i data-lucide="award" class="award-icon"></i>Top Rated</span>
+          <div class="profile-img">
+            <img src="./images/image.png" alt="Profile">
+          </div>
+          <span><i data-lucide="users" class="user-icon"></i>Team Lead</span>
+        </div>
+        <div class="profile-keys">
+          <div class="grid" data-aos="fade-up">
+            <i data-lucide="code" class="code-icon"></i>
+            <h1>150+</h1>
+            <h2>Projects</h2>
+          </div>
+          <div class="grid" data-aos="fade-up" data-aos-delay="200">
+            <i data-lucide="globe" class="globe-icon"></i>
+            <h1>12+</h1>
+            <h2>Countries</h2>
+          </div>
+          <div class="grid" data-aos="fade-up" data-aos-delay="400">
+            <i data-lucide="book" class="book-icon"></i>
+            <h1>80+</h1>
+            <h2>Articles</h2>
+          </div>
+          <div class="grid" data-aos="fade-up" data-aos-delay="600">
+            <i data-lucide="users" class="users-icon"></i>
+            <h1>50+</h1>
+            <h2>Clients</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="about-text" data-aos="fade-up" data-aos-delay="200">
+          <p>
+            Hi, I'm Raj Shekhar, a Full Stack Developer & UI/UX Enthusiast from India. I have a passion for web
+            development and love to create interactive and responsive websites. I have experience in both front-end and
+            back-end development and have worked with various technologies like HTML, CSS, JavaScript, React, Node.js,
+            and MongoDB.
+          </p>
+        </div>
+        <div class="about-skills">
+          <div class="skill-bar" data-aos="fade-up" data-aos-delay="400">
+            <i data-lucide="brain" class="brain-icon bar-icon"></i>
+            <span>
+              <h1>Problem Solving</h1>
+              <p>Analytical thinker with a knack for solving complex challenges</p>
+            </span>
+          </div>
+          <div class="skill-bar" data-aos="fade-up" data-aos-delay="600">
+            <i data-lucide="rocket" class="rocket-icon bar-icon"></i>
+            <span>
+              <h1>Fast Learner</h1>
+              <p>Quick learner with the ability to adapt to new technologies</p>
+            </span>
+          </div>
+          <div class="skill-bar" data-aos="fade-up" data-aos-delay="800">
+            <i data-lucide="heart" class="heart-icon bar-icon"></i>
+            <span>
+              <h1>Passionate Developer</h1>
+              <p>Dedicated to creating exceptional user experiences</p>
+            </span>
+          </div>
+        </div>
+        <div class="skills-container" data-aos="fade-up" data-aos-delay="1000">
+          <div class="skill-row">
+            <div class="skill-list">
+              <span class="key">HTML</span>
+              <span class="key">CSS</span>
+              <span class="key">JavaScript</span>
+              <span class="key">HTML</span>
+              <span class="key">CSS</span>
+              <span class="key">JavaScript</span>
+              <span class="key">HTML</span>
+              <span class="key">CSS</span>
+              <span class="key">JavaScript</span>
+              <span class="key">HTML</span>
+              <span class="key">CSS</span>
+              <span class="key">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-list middle">
+              <span class="key">React</span>
+              <span class="key">Bootstrap</span>
+              <span class="key">Tailwind CSS</span>
+              <span class="key">React</span>
+              <span class="key">Bootstrap</span>
+              <span class="key">Tailwind CSS</span>
+              <span class="key">React</span>
+              <span class="key">Bootstrap</span>
+              <span class="key">Tailwind CSS</span>
+              <span class="key">React</span>
+              <span class="key">Bootstrap</span>
+              <span class="key">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-list">
+              <span class="key">Node.js</span>
+              <span class="key">MongoDB</span>
+              <span class="key">Express</span>
+              <span class="key">Node.js</span>
+              <span class="key">MongoDB</span>
+              <span class="key">Express</span>
+              <span class="key">Node.js</span>
+              <span class="key">MongoDB</span>
+              <span class="key">Express</span>
+              <span class="key">Node.js</span>
+              <span class="key">MongoDB</span>
+              <span class="key">Express</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="blobs">
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
+  </section>
+
+  <!-- -------------------------- End About Section -------------------------- -->
+
+  <!-- ----------------------- Start Projects Section ------------------------ -->
+  <section class="projects-section space" id="Project">
+    <div class="section-title" data-aos="fade-up">
+      <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Projects</h2>
+    </div>
+    <div class="container">
+
+      <div class="project-container" data-aos="fade-up">
+        <div class="projects" id="projects">
+
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+    <div class="blobs">
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
+  </section>
+
+  <!-- ----------------------- End Projects Section ------------------------ -->
+
+  <!-- ---------------------- Start Experience Section ----------------------- -->
+
+  <section class="experience-section space" id="Experience">
+    <div class="section-title" data-aos="fade-up">
+      <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Experience</h2>
+    </div>
+    <div class="toggle-buttons">
+      <button id="experienceBtn" class="active" onclick="toggleContent('experience')">Experience</button>
+      <button id="qualificationBtn" onclick="toggleContent('qualification')">Qualification</button>
+    </div>
+    <!-- <div class="container"> -->
+
+    <!-- Experience -->
+    <div id="experience" class="content active">
+      <div class="card">
+        <div class="icon-box"><i data-lucide="briefcase"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Senior Frontend Developer</h3>
+          <p class="date-place">XYZ Company | 2023 - Present</p>
+          <ul class="lists">
+            <li> Developed and maintained multiple web applications using React, Angular, and Vue.js</li>
+            <li> Collaborated with cross-functional teams to design and develop user interfaces</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i data-lucide="code"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Web Developer</h3>
+          <p class="date-place">ABC Tech | 2020 - 2023</p>
+          <ul class="lists">
+            <li> Developed and maintained multiple web applications using HTML, CSS, and JavaScript</li>
+            <li> Collaborated with cross-functional teams to design and develop user interfaces</li>
+            <!-- <li> Implemented advanced algorithms and data structures to optimize performance</li </ul> -->
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i data-lucide="pen-tool"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">UI/UX Designer</h3>
+          <p class="date-place">Design Hub | 2018 - 2020</p>
+          <ul class="lists">
+            <li> Designed and developed user interfaces for multiple web applications</li>
+            <li> Collaborated with cross-functional teams to design and develop user interfaces</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Qualification -->
+    <div id="qualification" class="content">
+      <div class="card">
+        <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Master's in Computer Science</h3>
+          <p class="date-place">University of XYZ | 2022 - 2024</p>
+          <ul class="lists">
+            <li> Demonstrated expertise in web development and programming languages</li>
+            <li> Gained experience in project management and team collaboration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i data-lucide="book-open"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Bachelor in Computer Science</h3>
+          <p class="date-place">University of XYZ | 2018 - 2022</p>
+          <ul class="lists">
+            <li> Gained a strong foundation in computer science concepts</li>
+            <li> Developed a portfolio of projects and assignments</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="icon-box"><i data-lucide="certificate"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Certified Web Developer</h3>
+          <p class="date-place">ABC Institute | 2017 - 2018</p>
+          <ul class="lists">
+            <li> Completed a comprehensive course in web development</li>
+            <li> Gained hands-on experience in web development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <div class="blobs">
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
+  </section>
+
+  <!-- ---------------------- Start Experience Section ----------------------- -->
+
+
+
+  <!-- ------------------------ Start Contact Section ------------------------ -->
+  <section class="contact-section space" id="Contact">
+    <div class="section-title" data-aos="fade-up">
+      <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Get in Touch</h2>
+    </div>
+    <div class="container">
+      <!-- Left Side: Contact Info -->
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>Feel free to reach out via email or follow me on social media.</p>
+
+        <div class="contact-details">
+          <div class="detail"><i data-lucide="mail" class="contact-icon"></i> example@email.com</div>
+          <div class="detail"><i data-lucide="phone" class="contact-icon"></i> +123 456 7890</div>
+          <div class="detail"><i data-lucide="map" class="contact-icon"></i> New York, USA</div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" class="icon" data-tooltip="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="icon" data-tooltip="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="icon" data-tooltip="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" class="icon" data-tooltip="Instagram"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="contact-form">
+        <form id="contactForm">
+          <div class="input-box">
+            <input type="text" required>
+            <label>Name</label>
+          </div>
+          <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+        
+        <!-- Custom Alert -->
+        <div id="customAlert" class="alert">
+          <p>✅ Message Sent Successfully!</p>
+          <button onclick="closeAlert()">OK</button>
+        </div>
+        
+      </div>
+    </div>
+    <div class="blobs">
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ------------------------- End Contact Section ------------------------- -->
+
+  <footer>
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are a creative team dedicated to building amazing web experiences. Let us help you bring your ideas to
+          life!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter to get the latest updates and news.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2023 Your Company. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <!-- Background Blobs -->
+    <div class="footer-blobs">
+      <div class="footer-blob footer-blob-1"></div>
+      <div class="footer-blob footer-blob-2"></div>
+      <div class="footer-blob footer-blob-3"></div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+  <script src="api.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        lucide.createIcons();
+      }, 100);
+      // Initialize AOS (Animate on Scroll)
+      AOS.init();
+    });
+  </script>
+
+</body>
+
+</html>

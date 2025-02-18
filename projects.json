@@ -1,0 +1,20 @@
+[
+    {
+        "name": "My Portfolio",
+        "description": "A personal portfolio website built with React.",
+        "html_url": "https://github.com/raazkumar24/My-portfolio",
+        "preview_url": "https://your-live-portfolio-link.com"
+    },
+    {
+        "name": "E-Commerce Store",
+        "description": "A demo e-commerce platform using React and Material-UI.",
+        "html_url": "https://github.com/raazkumar24/ecommerce-store",
+        "preview_url": "https://your-live-store-link.com"
+    },
+    {
+        "name": "Blog App",
+        "description": "A full-stack MERN blog application.",
+        "html_url": "https://github.com/raazkumar24/blog-app",
+        "preview_url": "https://your-live-blog-link.com"
+    }
+]
