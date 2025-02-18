@@ -1,8 +1,24 @@
+/* -------------------------- For Montserrat + Lora ------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+
+/* --------------------- For Poppins + Playfair Display --------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap");
+
+/* -------------------------- For Inter + Roboto ---------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap");
+
+@import url("~lucide-static/font/Lucide.css");
+
+
 /* -------------------------- Root Variables -------------------------- */
 :root {
   /* Grid & Background */
-  --grid-pattern: linear-gradient(to right, rgba(128, 128, 128, 0.07) 1px, transparent 1px),
-                  linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
+  --grid-pattern: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
   --bg-color: #f5f7fa;
   --box-color: #ffffff;
   --header-bg-color: rgba(255, 255, 255, 0.2);
@@ -78,76 +94,20 @@
   --border-color: #555;
 
   /* Shadows */
-  --box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.05);
+  /* --box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.05);
   --shadow-soft: 4px 4px 10px rgba(255, 255, 255, 0.08);
   --shadow-deep: 6px 6px 15px rgba(255, 255, 255, 0.12);
-  --text-shadow-3d: 2px 5px 15px rgba(255, 255, 255, 0.3);
+  --text-shadow-3d: 2px 5px 15px rgba(255, 255, 255, 0.3); */
 
   /* Gradients */
   --gradient-bg: linear-gradient(to right, #0f172a, #312e81);
 }
 
 
-/* Toggle Switch Styles */
-.theme-switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
-}
-
-.theme-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #2563eb;
-}
-
-input:checked + .slider:before {
-  transform: translateX(24px);
-}
-
-
-/* -------------------------- For Montserrat + Lora ------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
-
-/* --------------------- For Poppins + Playfair Display --------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap");
-
-/* -------------------------- For Inter + Roboto ---------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap");
-
-@import url("~lucide-static/font/Lucide.css");
-
 /* Set a safe global box-sizing rule */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -202,8 +162,14 @@ header {
 
 header.scrolled {
   backdrop-filter: blur(10px);
-  background: var(--header-bg-color); 
+  background: var(--header-bg-color);
   box-shadow: var(--shadow-soft);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 header nav {
@@ -280,6 +246,54 @@ header nav .hamburger .line {
   background-color: var(--hover-text-color);
 }
 
+/* Toggle Switch Styles */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-color);
+  border: 1px solid var(--soft-lavender);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--soft-lavender);
+  box-shadow: var(--shadow-deep);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--bg-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
 /* ------------------------------ End of Header ----------------------------- */
 
 /* ------------------------------- Start Hero Section ------------------------------ */
@@ -346,6 +360,7 @@ header nav .hamburger .line {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  scale: 1.2;
   transition: transform 0.3s;
   &:hover {
     transform: scale(1.1);
@@ -421,18 +436,6 @@ header nav .hamburger .line {
   }
 }
 
-@keyframes gradient-xy {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .text-content {
   text-align: left;
 }
@@ -491,7 +494,7 @@ header nav .hamburger .line {
 .title-name {
   font-size: 3rem;
   font-weight: bold;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   color: var(--text-color-dark);
 }
 
@@ -562,7 +565,7 @@ header nav .hamburger .line {
   transform: translateX(-50%) translateY(-5px);
 }
 
-.download-cv .btn{
+.download-cv .btn {
   display: inline-flex;
   align-items: center;
   background: var(--dusty-blue);
@@ -577,7 +580,7 @@ header nav .hamburger .line {
   &:hover {
     background-color: var(--hover-text-color);
     text-shadow: none;
-    color: var(--color-white) ;
+    color: var(--color-white);
   }
 }
 
@@ -587,6 +590,7 @@ header nav .hamburger .line {
   bottom: 60px;
   width: 100%;
   cursor: pointer;
+  color: var(--text-color-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -658,12 +662,11 @@ header nav .hamburger .line {
     transform: scale(1.2);
   }
 }
-
 /* ------------------------------ End of Hero Section ------------------------------ */
 
 /* --------------------------------- About Section --------------------------------- */
-
-.about {
+.section {
+  /*Applied About Project Experience Contact section*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -928,19 +931,9 @@ header nav .hamburger .line {
     transform: translateX(-50%);
   }
 }
+/* ---------------------------- End About Section --------------------------- */
 
 /* -------------------------- Start Project Section ------------------------- */
-
-.projects-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-}
-
 .project-container {
   position: relative;
   width: 100%;
@@ -1013,7 +1006,6 @@ header nav .hamburger .line {
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* Show icons when hovering */
 .project:hover .icons-overlay {
   opacity: 1;
 }
@@ -1071,7 +1063,6 @@ header nav .hamburger .line {
   color: var(--text-color-dark);
 }
 
-
 .dots {
   display: flex;
   justify-content: center;
@@ -1092,21 +1083,9 @@ header nav .hamburger .line {
   background: var(--light-blue);
   transform: scale(1.2);
 }
-
 /* ------------------------- End of Project Section ------------------------- */
 
 /* ------------------------ Start Experience Section ------------------------ */
-
-.experience-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-}
-
 .toggle-buttons {
   display: flex;
   gap: 30px;
@@ -1116,16 +1095,19 @@ header nav .hamburger .line {
 .toggle-buttons button {
   font-size: 1rem;
   font-weight: bold;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   border: none;
   border-radius: 12px;
   background: var(--soft-lavender);
-  color: var(--text-color-light);
+  color: var(--text-white-color);
   box-shadow: var(--shadow-soft);
   text-shadow: var(--text-shadow);
   cursor: pointer;
   transition: all 0.5s;
-  &:hover { background : var(--vivid-periwinkle ) !important; box-shadow: var(--shadow-deep); }
+  &:hover {
+    background: var(--vivid-periwinkle) !important;
+    box-shadow: var(--shadow-deep);
+  }
 }
 
 .toggle-buttons button.active {
@@ -1162,14 +1144,11 @@ header nav .hamburger .line {
   overflow: hidden;
 }
 
-
-
 .experience-section .card:hover {
   box-shadow: var(--shadow-deep);
   border: none;
   transform: translateZ(10px) rotateX(15deg) rotateY(10deg);
-  scale: 1.;
-
+  scale: 1;
 }
 
 .card-content {
@@ -1188,8 +1167,7 @@ header nav .hamburger .line {
   transform: translateY(-10px);
 }
 
-
-.card-content .date-place { 
+.card-content .date-place {
   color: var(--text-color-light);
   transition: all 0.5s ease-in-out;
 }
@@ -1217,15 +1195,11 @@ header nav .hamburger .line {
   transition: all 0.5s ease-in-out;
 }
 
-
 .experience-section .card:hover .lists li {
   text-shadow: var(--text-shadow-3d);
   transform: translateY(-10px);
   border: none;
-
 }
-
-
 
 .icon-box {
   width: 40px;
@@ -1246,7 +1220,6 @@ header nav .hamburger .line {
   box-shadow: var(--text-shadow-3d);
   transform: translateY(-15px);
 }
-
 /* ----------------------- End of Experience Section ----------------------- */
 
 /* ------------------------- Start Contact Section ------------------------- */
@@ -1289,13 +1262,12 @@ header nav .hamburger .line {
   transition: transform 0.1s ease, box-shadow 0.1s ease;
   transform-style: preserve-3d;
   perspective: 500px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-soft);
 }
 
 .contact-details:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-deep);
 }
-
 
 .detail {
   width: auto;
@@ -1308,13 +1280,13 @@ header nav .hamburger .line {
 }
 
 .contact-details:hover .detail {
-  text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4); 
+  text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 .contact-icon {
   width: 40px;
   height: 40px;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 12px;
   color: var(--hover-text-color);
   background-color: var(--dusty-blue);
@@ -1325,7 +1297,6 @@ header nav .hamburger .line {
   background-color: var(--muted-sky-blue);
 }
 
-/* Right Side: Contact Form */
 .contact-form {
   flex: 1;
   padding: 1.5rem;
@@ -1337,7 +1308,7 @@ header nav .hamburger .line {
   margin-bottom: 1.5rem;
 }
 
-.input-box input, 
+.input-box input,
 .input-box textarea {
   width: 100%;
   background: transparent;
@@ -1359,7 +1330,7 @@ header nav .hamburger .line {
 }
 
 .input-box input:focus + label,
-.input-box input:valid + label{
+.input-box input:valid + label {
   transform: translateY(-20px);
   font-size: 0.8rem;
   color: var(--hover-text-color);
@@ -1376,7 +1347,6 @@ header nav .hamburger .line {
   border-bottom-color: var(--hover-text-color);
 }
 
-/* Send Button */
 .send-btn {
   background: var(--vivid-periwinkle);
   color: var(--color-white);
@@ -1399,11 +1369,11 @@ header nav .hamburger .line {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #28a745;
-  color: white;
+  background: var(--pale-pink);
+  color: var(--text-white-color);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-deep);
   text-align: center;
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -1429,22 +1399,9 @@ header nav .hamburger .line {
     transform: translate(-50%, -50%);
   }
 }
-
-
-/* Responsive */
-@media (max-width: 768px) {
-  .contact-container {
-      flex-direction: column;
-  }
-  .contact-info, .contact-form {
-      text-align: center;
-      width: 100%;
-  }
-}
 /* ------------------------- End of Contact Section ------------------------ */
 
 /* -------------------------- Start footer Section -------------------------- */
-/* -------------------------- Footer Section -------------------------- */
 footer {
   background: var(--contact-bg);
   color: var(--text-color-light);
@@ -1511,7 +1468,6 @@ footer {
   color: var(--hover-text-color);
 }
 
-/* Newsletter Form */
 .newsletter-form {
   display: flex;
   gap: 0.5rem;
@@ -1561,6 +1517,7 @@ footer {
   justify-content: center;
   width: 40px;
   height: 40px;
+  font-size: 1.5rem;
   background: var(--contact-icon-bg);
   color: var(--contact-icon-color);
   border-radius: 50%;
@@ -1571,10 +1528,9 @@ footer {
 .social-icons a:hover {
   transform: translateY(-5px);
   background: var(--gradient-button);
-  color: white;
+  color: var(--text-white-color);
 }
 
-/* Footer Bottom */
 .footer-bottom {
   text-align: center;
   margin-top: 2rem;
@@ -1597,73 +1553,46 @@ footer {
   color: var(--vivid-periwinkle);
 }
 
-/* Background Blobs */
-.footer-blobs {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
+
+/* -------------------------------- back-btn -------------------------------- */
+.back-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--vivid-periwinkle);
+  color: var(--text-white-color);
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: var(--shadow-deep);
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  &:hover {
+    background: var(--gradient-button-hover);
+    transform: translateY(0);
+  }
 }
 
-.footer-blob {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: rgba(59, 130, 246, 0.1);
-  border-radius: 50%;
-  filter: blur(60px);
-  animation: float 6s infinite alternate ease-in-out;
+.back-btn.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.footer-blob-1 {
-  top: 10%;
-  left: 10%;
-  animation-delay: 0s;
+.back-btn i {
+  width: 50px;
+  height: 50px;
 }
 
-.footer-blob-2 {
-  top: 30%;
-  right: 10%;
-  animation-delay: 2s;
-}
 
-.footer-blob-3 {
-  bottom: 10%;
-  left: 50%;
-  animation-delay: 4s;
-}
+/* ------------------------- End of footer Section ------------------------ */
 
-/* Responsive Design */
+/* ----------------------------  responsive --------------------------- */
 @media (max-width: 768px) {
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-section h3::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-
-  .newsletter-form button {
-    width: 100%;
-  }
-
-  .social-icons {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* ---------------------------- header responsive --------------------------- */
-@media (max-width: 768px) {
-  /* --------------------------------- Header --------------------------------- */
+  /* ---------------------------------Start Header Section --------------------------------- */
   header {
     height: 8vh;
     padding: 0 1rem;
@@ -1706,15 +1635,12 @@ footer {
     font-size: 1rem;
   }
 
-  /* Hamburger Menu */
   header nav .hamburger {
     display: block;
   }
+  /* ------------------------------ End of Header Section ----------------------------- */
 
-  /* ------------------------------ End of Header ----------------------------- */
-
-  /* ---------------------------------- hero ---------------------------------- */
-
+  /* ---------------------------------- Start hero Section ---------------------------------- */
   .container {
     flex-direction: column;
     gap: 50px;
@@ -1744,11 +1670,9 @@ footer {
   .social-links {
     justify-content: center;
   }
+  /* ------------------------------ End of Hero Section ----------------------------- */
 
-  /* ------------------------------ End of hero ----------------------------- */
-
-  /* --------------------------------- About Section --------------------------------- */
-
+  /* --------------------------------- Start About Section --------------------------------- */
   .image-icons .profile-img {
     width: 100%;
     height: 100%;
@@ -1764,6 +1688,43 @@ footer {
     width: 100%;
     overflow: hidden;
   }
+  /* -------------------------- End of About Section -------------------------- */
+
+  /* -------------------------- Start Contact Section ------------------------- */
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    text-align: center;
+    width: 100%;
+  }
+  /* ------------------------- End of Contact Section ------------------------- */
+
+  /* -------------------------- Start Footer Section -------------------------- */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-section h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  .social-icons {
+    align-items: center;
+    justify-content: center;
+  }
+  /* ------------------------------ End of Footer ----------------------------- */
 }
 
 @media (max-width: 480px) {
@@ -1792,13 +1753,4 @@ footer {
   }
 
   /* ------------------------- End of Project Section ------------------------- */
-
-  /* ------------------------ Start Experience Section ------------------------ */
-  /* .experience-section .content.active {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px));
-    gap: 20px;
-    opacity: 1;
-    transform: translateY(0);
-  } */
 }

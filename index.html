@@ -27,6 +27,8 @@
   <!-- ------------------------------ lucide ------------------------------ -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
   <!-- ------------------------------ boxicons ------------------------------- -->
   <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
 
@@ -39,11 +41,13 @@
   <!-- ------------------------------ header ------------------------------ -->
   <header class="header">
     <nav>
+      <div class="logo">
       <a href="#" class="gradient-text">RS</a>
       <label class="theme-switch">
         <input type="checkbox" id="theme-toggle">
         <span class="slider"></span>
       </label>
+    </div>
       
       <ul class="links">
         <li><a href="#Home">Home</a></li>
@@ -77,7 +81,7 @@
 
         <!-- Profile Image -->
         <div class="profile-img">
-          <img src="./images/profile.webp" alt="Profile">
+          <img src="./images/profile-img.png" alt="Profile">
         </div>
       </div>
 
@@ -126,8 +130,7 @@
 
 
   <!-- ------------------------------ About ------------------------------ -->
-
-  <section class="about space" id="About">
+  <section class="about section" id="About">
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="user" class="title-icon"></i>About Me</h2>
     </div>
@@ -136,7 +139,7 @@
         <div class="image-section" data-aos="zoom-in" data-aos-duration="1000">
           <span><i data-lucide="award" class="award-icon"></i>Top Rated</span>
           <div class="profile-img">
-            <img src="./images/image.png" alt="Profile">
+            <img src="./images/full-profile-img.jpeg" alt="Profile">
           </div>
           <span><i data-lucide="users" class="user-icon"></i>Team Lead</span>
         </div>
@@ -255,15 +258,14 @@
       <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
     </div>
   </section>
-
   <!-- -------------------------- End About Section -------------------------- -->
 
+
   <!-- ----------------------- Start Projects Section ------------------------ -->
-  <section class="projects-section space" id="Project">
+  <section class="projects section" id="Project">
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Projects</h2>
     </div>
-    <div class="container">
 
       <div class="project-container" data-aos="fade-up">
         <div class="projects" id="projects">
@@ -271,19 +273,17 @@
         </div>
         <div class="dots" id="dots"></div>
       </div>
-    </div>
     <div class="blobs">
       <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
       <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
       <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
     </div>
   </section>
-
   <!-- ----------------------- End Projects Section ------------------------ -->
 
-  <!-- ---------------------- Start Experience Section ----------------------- -->
 
-  <section class="experience-section space" id="Experience">
+  <!-- ---------------------- Start Experience Section ----------------------- -->
+  <section class="experience-section section" id="Experience">
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Experience</h2>
     </div>
@@ -373,13 +373,12 @@
       <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
     </div>
   </section>
-
   <!-- ---------------------- Start Experience Section ----------------------- -->
 
 
 
   <!-- ------------------------ Start Contact Section ------------------------ -->
-  <section class="contact-section space" id="Contact">
+  <section class="contact section space" id="Contact">
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Get in Touch</h2>
     </div>
@@ -437,12 +436,10 @@
       <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
     </div>
   </section>
-
-
-
-
   <!-- ------------------------- End Contact Section ------------------------- -->
 
+
+  <!-- ------------------------- Start Footer ------------------------- -->
   <footer>
     <div class="footer-container">
       <!-- About Section -->
@@ -477,27 +474,25 @@
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
         </div>
       </div>
     </div>
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <p>&copy; 2023 Your Company. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      <p>&copy; 2025 Raj Shekhar. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </div>
-
-    <!-- Background Blobs -->
-    <div class="footer-blobs">
-      <div class="footer-blob footer-blob-1"></div>
-      <div class="footer-blob footer-blob-2"></div>
-      <div class="footer-blob footer-blob-3"></div>
     </div>
   </footer>
-
+  
+  <div class="back-btn">
+    <i data-lucide="arrow-up"></i>
+    <p>Back to Top</p>
+  </div>
 
 
 
