@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     projects.forEach((project, index) => {
       projectsContainer.innerHTML += `
-        <div class="project">
+        <div class="project" data-aos="fade-up">
           <div class="image-container">
             <img src="${project.image || 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514'}" alt="Project Image">
             <div class="icons-overlay">
@@ -69,27 +69,27 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
       `;
 
-      const dot = document.createElement("div");
-      dot.classList.add("dot", index === 0 && "active");
-      dot.addEventListener("click", () => scrollToProject(index));
-      dotsContainer.appendChild(dot);
+      // const dot = document.createElement("div");
+      // dot.classList.add("dot", index === 0 && "active");
+      // dot.addEventListener("click", () => scrollToProject(index));
+      // dotsContainer.appendChild(dot);
     });
 
-    projectsContainer.addEventListener("scroll", updateActiveDotOnScroll);
+    // projectsContainer.addEventListener("scroll", updateActiveDotOnScroll);
   }
 
-  function scrollToProject(index) {
-    document.querySelectorAll(".project")[index]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
-  }
+  // function scrollToProject(index) {
+  //   document.querySelectorAll(".project")[index]?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+  // }
 
-  function updateActiveDotOnScroll() {
-    let minDistance = Infinity, activeIndex = 0;
-    document.querySelectorAll(".project").forEach((project, index) => {
-      const distance = Math.abs(project.getBoundingClientRect().left + project.clientWidth / 2 - window.innerWidth / 2);
-      if (distance < minDistance) [minDistance, activeIndex] = [distance, index];
-    });
-    document.querySelectorAll(".dot").forEach((dot, i) => dot.classList.toggle("active", i === activeIndex));
-  }
+  // function updateActiveDotOnScroll() {
+  //   let minDistance = Infinity, activeIndex = 0;
+  //   document.querySelectorAll(".project").forEach((project, index) => {
+  //     const distance = Math.abs(project.getBoundingClientRect().left + project.clientWidth / 2 - window.innerWidth / 2);
+  //     if (distance < minDistance) [minDistance, activeIndex] = [distance, index];
+  //   });
+  //   document.querySelectorAll(".dot").forEach((dot, i) => dot.classList.toggle("active", i === activeIndex));
+  // }
 
   displayProjects();
 

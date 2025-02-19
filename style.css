@@ -937,39 +937,43 @@ input:checked + .slider:before {
 .project-container {
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 77rem;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .projects {
-  display: flex;
+  /* display: flex;
+  flex-wrap: wrap;
   overflow-x: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  gap: 20px; */
+  /* scroll-snap-type: x mandatory; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   padding: 20px;
   gap: 20px;
-  scroll-snap-type: x mandatory;
 }
-
+/* 
 .projects::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .project {
-  min-width: 350px;
+  /* min-width: 350px; */
   background: var(--box-color);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: var(--shadow-soft);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
   position: relative;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
 }
 
 .project:hover {
   box-shadow: var(--shadow-deep);
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
 }
 
 .image-container {
@@ -1063,7 +1067,7 @@ input:checked + .slider:before {
   color: var(--text-color-dark);
 }
 
-.dots {
+/* .dots {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -1082,7 +1086,7 @@ input:checked + .slider:before {
 .dot.active {
   background: var(--light-blue);
   transform: scale(1.2);
-}
+} */
 /* ------------------------- End of Project Section ------------------------- */
 
 /* ------------------------ Start Experience Section ------------------------ */
@@ -1095,17 +1099,19 @@ input:checked + .slider:before {
 .toggle-buttons button {
   font-size: 1rem;
   font-weight: bold;
-  padding: 0.8rem 1rem;
-  border: none;
-  border-radius: 12px;
-  background: var(--soft-lavender);
-  color: var(--text-white-color);
+  padding: 0.5rem;
+  border: 1px solid var(--vivid-periwinkle);
+  border-radius: 14px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  color: var(--vivid-periwinkle);
   box-shadow: var(--shadow-soft);
   text-shadow: var(--text-shadow);
   cursor: pointer;
   transition: all 0.5s;
   &:hover {
     background: var(--vivid-periwinkle) !important;
+    color: var(--text-white-color);
     box-shadow: var(--shadow-deep);
   }
 }
@@ -1113,6 +1119,7 @@ input:checked + .slider:before {
 .toggle-buttons button.active {
   background: var(--vivid-periwinkle);
   box-shadow: var(--shadow-deep);
+  color: var(--text-white-color);
 }
 
 .experience-section .content {
@@ -1140,14 +1147,13 @@ input:checked + .slider:before {
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: var(--shadow-soft);
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
+  transition: all 0.5s ease-in-out !important;
 }
 
 .experience-section .card:hover {
   box-shadow: var(--shadow-deep);
   border: none;
-  transform: translateZ(10px) rotateX(15deg) rotateY(10deg);
+  transform: translateZ(10px) rotateX(15deg) rotateY(10deg) !important;
   scale: 1;
 }
 
@@ -1164,7 +1170,7 @@ input:checked + .slider:before {
 
 .card:hover .role-title {
   text-shadow: var(--text-shadow-3d);
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .card-content .date-place {
@@ -1174,7 +1180,7 @@ input:checked + .slider:before {
 
 .card:hover .date-place {
   text-shadow: var(--text-shadow-3d);
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 
 .card-content .lists {
@@ -1197,15 +1203,15 @@ input:checked + .slider:before {
 
 .experience-section .card:hover .lists li {
   text-shadow: var(--text-shadow-3d);
-  transform: translateY(-10px);
-  border: none;
+  transform: translateY(-20px);
+  /* border: none; */
 }
 
 .icon-box {
   width: 40px;
   height: 40px;
   background: var(--soft-lavender);
-  color: var(--text-color-low-light);
+  color: var(--text-white-color);
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -1216,9 +1222,8 @@ input:checked + .slider:before {
 
 .experience-section .card:hover .icon-box {
   background: var(--soft-lavender);
-  color: var(--text-white-color);
   box-shadow: var(--text-shadow-3d);
-  transform: translateY(-15px);
+  transform: translateY(-25px);
 }
 /* ----------------------- End of Experience Section ----------------------- */
 
@@ -1348,8 +1353,8 @@ input:checked + .slider:before {
 }
 
 .send-btn {
-  background: var(--vivid-periwinkle);
-  color: var(--color-white);
+  background: var(--soft-lavender);
+  color: var(--text-white-color);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -1359,7 +1364,7 @@ input:checked + .slider:before {
 }
 
 .send-btn:hover {
-  background: var(--hover-text-color);
+  background: var(--vivid-periwinkle);
   transform: scale(1.05);
 }
 
@@ -1690,6 +1695,8 @@ footer {
   }
   /* -------------------------- End of About Section -------------------------- */
 
+
+
   /* -------------------------- Start Contact Section ------------------------- */
   .contact-container {
     flex-direction: column;
@@ -1748,9 +1755,7 @@ footer {
   /* -------------------------- End of About Section -------------------------- */
 
   /* ----------------------------- Project Section ---------------------------- */
-  .project {
-    min-width: 320px;
-  }
+  
 
   /* ------------------------- End of Project Section ------------------------- */
 }

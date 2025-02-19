@@ -11,7 +11,7 @@
   <!-- ------------------------ browser header color ------------------------- -->
   <meta name="theme-color" content="#eac4d5" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#222222" media="(prefers-color-scheme: dark)">
-  
+
 
   <title>Portfolio</title>
 
@@ -41,15 +41,15 @@
   <!-- ------------------------------ header ------------------------------ -->
   <header class="header">
     <nav>
-      <div class="logo">
-      <a href="#" class="gradient-text">RS</a>
-      <label class="theme-switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider"></span>
-      </label>
-    </div>
-      
-      <ul class="links">
+      <div class="logo" data-aos="fade-right">
+        <a href="#" class="gradient-text">RS</a>
+        <label class="theme-switch">
+          <input type="checkbox" id="theme-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <ul class="links" data-aos="fade-right">
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Project">Project</a></li>
@@ -58,7 +58,7 @@
       </ul>
 
       <!-- Hamburger Menu -->
-      <div class="hamburger">
+      <div class="hamburger" data-aos="fade-left">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -81,7 +81,7 @@
 
         <!-- Profile Image -->
         <div class="profile-img">
-          <img src="./images/profile-img.png" alt="Profile">
+          <img src="./images/profile-img.png" class="lazy" alt="Profile">
         </div>
       </div>
 
@@ -101,9 +101,15 @@
 
         <!-- Social Links -->
         <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-          <a href="#" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
-          <a href="#" class="icon" data-tooltip="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="#" class="icon" data-tooltip="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://github.com/raazkumar24" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/raj-shekhar-799898214/" class="icon" data-tooltip="LinkedIn"><i
+              data-lucide="linkedin"></i></a>
+          <a href="https://twitter.com/RajWeb24" class="icon" data-tooltip="Twitter"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100048921287040" class="icon" data-tooltip="Facebook"><i
+              data-lucide="facebook"></i></a>
+          <a href="https://www.instagram.com/raaz__kumar_" class="icon" data-tooltip="Instagram"><i
+              data-lucide="instagram"></i></a>
           <!-- Download CV Button -->
           <div class="download-cv" data-aos="fade-up" data-aos-delay="600">
             <a href="#" class="btn">Download CV</a>
@@ -139,7 +145,7 @@
         <div class="image-section" data-aos="zoom-in" data-aos-duration="1000">
           <span><i data-lucide="award" class="award-icon"></i>Top Rated</span>
           <div class="profile-img">
-            <img src="./images/full-profile-img.jpeg" alt="Profile">
+            <img src="./images/full-profile-img.jpeg" class="lazy" alt="Profile">
           </div>
           <span><i data-lucide="users" class="user-icon"></i>Team Lead</span>
         </div>
@@ -149,17 +155,17 @@
             <h1>150+</h1>
             <h2>Projects</h2>
           </div>
-          <div class="grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="grid" data-aos="fade-up">
             <i data-lucide="globe" class="globe-icon"></i>
             <h1>12+</h1>
             <h2>Countries</h2>
           </div>
-          <div class="grid" data-aos="fade-up" data-aos-delay="400">
+          <div class="grid" data-aos="fade-up">
             <i data-lucide="book" class="book-icon"></i>
             <h1>80+</h1>
             <h2>Articles</h2>
           </div>
-          <div class="grid" data-aos="fade-up" data-aos-delay="600">
+          <div class="grid" data-aos="fade-up">
             <i data-lucide="users" class="users-icon"></i>
             <h1>50+</h1>
             <h2>Clients</h2>
@@ -177,21 +183,21 @@
           </p>
         </div>
         <div class="about-skills">
-          <div class="skill-bar" data-aos="fade-up" data-aos-delay="400">
+          <div class="skill-bar" data-aos="fade-up">
             <i data-lucide="brain" class="brain-icon bar-icon"></i>
             <span>
               <h1>Problem Solving</h1>
               <p>Analytical thinker with a knack for solving complex challenges</p>
             </span>
           </div>
-          <div class="skill-bar" data-aos="fade-up" data-aos-delay="600">
+          <div class="skill-bar" data-aos="fade-up">
             <i data-lucide="rocket" class="rocket-icon bar-icon"></i>
             <span>
               <h1>Fast Learner</h1>
               <p>Quick learner with the ability to adapt to new technologies</p>
             </span>
           </div>
-          <div class="skill-bar" data-aos="fade-up" data-aos-delay="800">
+          <div class="skill-bar" data-aos="fade-up">
             <i data-lucide="heart" class="heart-icon bar-icon"></i>
             <span>
               <h1>Passionate Developer</h1>
@@ -199,7 +205,7 @@
             </span>
           </div>
         </div>
-        <div class="skills-container" data-aos="fade-up" data-aos-delay="1000">
+        <div class="skills-container" data-aos="fade-up">
           <div class="skill-row">
             <div class="skill-list">
               <span class="key">HTML</span>
@@ -262,17 +268,17 @@
 
 
   <!-- ----------------------- Start Projects Section ------------------------ -->
-  <section class="projects section" id="Project">
+  <section class="project-secion section" id="Project">
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Projects</h2>
     </div>
 
-      <div class="project-container" data-aos="fade-up">
-        <div class="projects" id="projects">
+    <div class="project-container">
+      <div class="projects" id="projects">
 
-        </div>
-        <div class="dots" id="dots"></div>
       </div>
+      <div class="dots" id="dots"></div>
+    </div>
     <div class="blobs">
       <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
       <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
@@ -287,7 +293,7 @@
     <div class="section-title" data-aos="fade-up">
       <h2 class="title"><i data-lucide="briefcase" class="title-icon"></i>Experience</h2>
     </div>
-    <div class="toggle-buttons">
+    <div class="toggle-buttons" data-aos="zoom-in">
       <button id="experienceBtn" class="active" onclick="toggleContent('experience')">Experience</button>
       <button id="qualificationBtn" onclick="toggleContent('qualification')">Qualification</button>
     </div>
@@ -295,18 +301,18 @@
 
     <!-- Experience -->
     <div id="experience" class="content active">
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <div class="icon-box"><i data-lucide="briefcase"></i></div>
         <div class="card-content">
           <h3 class="role-title">Senior Frontend Developer</h3>
-          <p class="date-place">XYZ Company | 2023 - Present</p>
+          <p class="date-place">XYZ Company | 2025 - Present</p>
           <ul class="lists">
             <li> Developed and maintained multiple web applications using React, Angular, and Vue.js</li>
             <li> Collaborated with cross-functional teams to design and develop user interfaces</li>
           </ul>
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <div class="icon-box"><i data-lucide="code"></i></div>
         <div class="card-content">
           <h3 class="role-title">Web Developer</h3>
@@ -317,7 +323,7 @@
             <!-- <li> Implemented advanced algorithms and data structures to optimize performance</li </ul> -->
         </div>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <div class="icon-box"><i data-lucide="pen-tool"></i></div>
         <div class="card-content">
           <h3 class="role-title">UI/UX Designer</h3>
@@ -332,40 +338,41 @@
 
     <!-- Qualification -->
     <div id="qualification" class="content">
-      <div class="card">
-        <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
-        <div class="card-content">
-          <h3 class="role-title">Master's in Computer Science</h3>
-          <p class="date-place">University of XYZ | 2022 - 2024</p>
-          <ul class="lists">
-            <li> Demonstrated expertise in web development and programming languages</li>
-            <li> Gained experience in project management and team collaboration</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <div class="icon-box"><i data-lucide="book-open"></i></div>
-        <div class="card-content">
-          <h3 class="role-title">Bachelor in Computer Science</h3>
-          <p class="date-place">University of XYZ | 2018 - 2022</p>
-          <ul class="lists">
-            <li> Gained a strong foundation in computer science concepts</li>
-            <li> Developed a portfolio of projects and assignments</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <div class="icon-box"><i data-lucide="certificate"></i></div>
+      <div class="card" data-aos="fade-up">
+        <div class="icon-box"><i data-lucide="shield-check"></i></div>
         <div class="card-content">
           <h3 class="role-title">Certified Web Developer</h3>
-          <p class="date-place">ABC Institute | 2017 - 2018</p>
+          <p class="date-place">Udemy | 2022 - 2025</p>
           <ul class="lists">
             <li> Completed a comprehensive course in web development</li>
             <li> Gained hands-on experience in web development</li>
           </ul>
         </div>
       </div>
+      <div class="card" data-aos="fade-up">
+        <div class="icon-box"><i data-lucide="book-open"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Bachelor in Computer Application</h3>
+          <p class="date-place">University of Chandigarh | 2023 - 2026 Onwards</p>
+          <ul class="lists">
+            <li> Gained a strong foundation in computer Application concepts</li>
+            <li> Developed a portfolio of projects and assignments</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <div class="icon-box"><i data-lucide="graduation-cap"></i></div>
+        <div class="card-content">
+          <h3 class="role-title">Class 10th & 12th</h3>
+          <p class="date-place">Board CBSE | 2020 - 2022</p>
+          <ul class="lists">
+            <li>Completed Class 10th and 12th from CBSE with good grades</li>
+            <li>Gained a strong foundation in academics and problem-solving skills</li>
+          </ul>
+        </div>
+      </div>
     </div>
+
     <!-- </div> -->
     <div class="blobs">
       <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
@@ -384,7 +391,7 @@
     </div>
     <div class="container">
       <!-- Left Side: Contact Info -->
-      <div class="contact-info">
+      <div class="contact-info" data-aos="fade-up">
         <h3>Let's Connect</h3>
         <p>Feel free to reach out via email or follow me on social media.</p>
 
@@ -396,45 +403,48 @@
 
         <!-- Social Icons -->
         <div class="social-links" data-aos="fade-up" data-aos-delay="400">
-          <a href="#" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
-          <a href="#" class="icon" data-tooltip="LinkedIn"><i data-lucide="linkedin"></i></a>
-          <a href="#" class="icon" data-tooltip="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" class="icon" data-tooltip="Facebook"><i data-lucide="facebook"></i></a>
-          <a href="#" class="icon" data-tooltip="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://github.com/raazkumar24" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
+          <a href="https://www.linkedin.com/in/raj-shekhar-799898214/" class="icon" data-tooltip="LinkedIn"><i
+              data-lucide="linkedin"></i></a>
+          <a href="https://twitter.com/RajWeb24" class="icon" data-tooltip="Twitter"><i
+              class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100048921287040" class="icon" data-tooltip="Facebook"><i
+              data-lucide="facebook"></i></a>
+          <a href="https://www.instagram.com/raaz__kumar_" class="icon" data-tooltip="Instagram"><i
+              data-lucide="instagram"></i></a>
         </div>
-      </div>
 
-      <!-- Right Side: Contact Form -->
-      <div class="contact-form">
-        <form id="contactForm">
-          <div class="input-box">
-            <input type="text" required>
-            <label>Name</label>
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form" data-aos="fade-up">
+          <form id="contactForm">
+            <div class="input-box">
+              <input type="text" required>
+              <label>Name</label>
+            </div>
+            <div class="input-box">
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <textarea required></textarea>
+              <label>Message</label>
+            </div>
+            <button type="submit" class="send-btn">Send Message</button>
+          </form>
+
+          <!-- Custom Alert -->
+          <div id="customAlert" class="alert">
+            <p><i data-lucide="check"></i> Message Sent Successfully!</p>
+            <button onclick="closeAlert()">OK</button>
           </div>
-          <div class="input-box">
-            <input type="email" required>
-            <label>Email</label>
-          </div>
-          <div class="input-box">
-            <textarea required></textarea>
-            <label>Message</label>
-          </div>
-          <button type="submit" class="send-btn">Send Message</button>
-        </form>
-        
-        <!-- Custom Alert -->
-        <div id="customAlert" class="alert">
-          <p>✅ Message Sent Successfully!</p>
-          <button onclick="closeAlert()">OK</button>
+
         </div>
-        
       </div>
-    </div>
-    <div class="blobs">
-      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
-      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
-      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
-    </div>
+      <div class="blobs">
+        <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+        <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+        <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+      </div>
   </section>
   <!-- ------------------------- End Contact Section ------------------------- -->
 
@@ -453,10 +463,11 @@
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Project">Projects</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
 
@@ -474,10 +485,12 @@
       <div class="footer-section">
         <h3>Follow Us</h3>
         <div class="social-icons">
-          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="https://twitter.com/RajWeb24" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100048921287040" aria-label="Facebook"><i
+              data-lucide="facebook"></i></a>
+          <a href="https://www.instagram.com/raaz__kumar_" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="https://www.linkedin.com/in/raj-shekhar-799898214/" aria-label="LinkedIn"><i
+              data-lucide="linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -488,7 +501,7 @@
     </div>
     </div>
   </footer>
-  
+
   <div class="back-btn">
     <i data-lucide="arrow-up"></i>
     <p>Back to Top</p>
