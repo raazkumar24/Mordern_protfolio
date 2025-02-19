@@ -1339,9 +1339,10 @@ input:checked + .slider:before {
   font-size: 0.8rem;
   color: var(--hover-text-color);
 }
+
 .input-box textarea:focus + label,
 .input-box textarea:valid + label {
-  transform: translateY(-50px);
+  transform: translateY(-40px);
   font-size: 0.8rem;
   color: var(--hover-text-color);
 }
