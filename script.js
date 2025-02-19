@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Adjust Space Between Header & Sections
   function adjustSpacing() {
     const headerHeight = header.offsetHeight;
-    document.querySelectorAll(".space").forEach(section => {
+    document.querySelectorAll(".section").forEach(section => {
       section.style.paddingTop = `${headerHeight}px`;
     });
   }
