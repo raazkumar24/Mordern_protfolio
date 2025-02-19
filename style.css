@@ -580,7 +580,7 @@ input:checked + .slider:before {
   &:hover {
     background-color: var(--hover-text-color);
     text-shadow: none;
-    color: var(--color-white);
+    color: var(--text-white-color);
   }
 }
 
@@ -1228,14 +1228,11 @@ input:checked + .slider:before {
 /* ----------------------- End of Experience Section ----------------------- */
 
 /* ------------------------- Start Contact Section ------------------------- */
-.contact-section {
-  position: relative;
+.contact-container {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
 }
 
 .section-title {
@@ -1245,6 +1242,7 @@ input:checked + .slider:before {
 
 .contact-info {
   flex: 1;
+  width: 50%;
   padding: 1.5rem;
   text-align: left;
 }
@@ -1295,7 +1293,7 @@ input:checked + .slider:before {
   border-radius: 12px;
   color: var(--hover-text-color);
   background-color: var(--dusty-blue);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.s ease-in-out;
 }
 
 .detail:hover .contact-icon {
@@ -1304,6 +1302,7 @@ input:checked + .slider:before {
 
 .contact-form {
   flex: 1;
+  width: 50%;
   padding: 1.5rem;
   text-align: left;
 }
@@ -1320,7 +1319,7 @@ input:checked + .slider:before {
   border: none;
   border-bottom: 2px solid var(--text-color-light);
   padding: 10px;
-  color: var(--text-color);
+  color: var(--text-color-dark);
   outline: none;
   font-size: 1rem;
 }
@@ -1497,7 +1496,7 @@ footer {
 .newsletter-form button {
   padding: 0.75rem 1.5rem;
   background: var(--gradient-button);
-  color: white;
+  color: var(--text-white-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -1527,7 +1526,7 @@ footer {
   color: var(--contact-icon-color);
   border-radius: 50%;
   text-decoration: none;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease !important;
 }
 
 .social-icons a:hover {
@@ -1573,7 +1572,7 @@ footer {
   border-radius: 30px;
   box-shadow: var(--shadow-deep);
   cursor: pointer;
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s !important;
   opacity: 0;
   transform: translateY(20px);
   &:hover {
@@ -1617,9 +1616,8 @@ footer {
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     z-index: 999;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
   }
 
   .links.open {

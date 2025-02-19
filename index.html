@@ -69,7 +69,7 @@
   <!-- -------------------------------- Hero --------------------------------- -->
   <section id="Home" class="hero">
     <div class="container">
-      <div class="profile-container" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="profile-container" data-aos="zoom-in">
         <div class="rotating-border rotating-border-1"></div>
         <div class="rotating-border rotating-border-2"></div>
 
@@ -86,32 +86,32 @@
       </div>
 
       <!-- Text Content -->
-      <div class="text-content">
-        <div class="available-hire" data-aos="fade-up" data-aos-delay="800">
+      <div class="text-content" data-aos="fade-up">
+        <div class="available-hire">
           <span class="dot-circle"></span>
           Available for hire
         </div>
-        <div class="profile-title" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="profile-title">
           <h1 class="title-name">Hi, I'm <span class="gradient-text">Raj Shekhar</span></h1>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="200">
+        <div>
           <p class="subtitle">Full Stack Developer & UI/UX Enthusiast</p>
         </div>
 
         <!-- Social Links -->
-        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+        <div class="social-links">
           <a href="https://github.com/raazkumar24" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
           <a href="https://www.linkedin.com/in/raj-shekhar-799898214/" class="icon" data-tooltip="LinkedIn"><i
               data-lucide="linkedin"></i></a>
           <a href="https://twitter.com/RajWeb24" class="icon" data-tooltip="Twitter"><i
               class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100048921287040" class="icon" data-tooltip="Facebook"><i
+          <!-- <a href="https://www.facebook.com/profile.php?id=100048921287040" class="icon" data-tooltip="Facebook"><i
               data-lucide="facebook"></i></a>
           <a href="https://www.instagram.com/raaz__kumar_" class="icon" data-tooltip="Instagram"><i
-              data-lucide="instagram"></i></a>
+              data-lucide="instagram"></i></a> -->
           <!-- Download CV Button -->
-          <div class="download-cv" data-aos="fade-up" data-aos-delay="600">
+          <div class="download-cv">
             <a href="#" class="btn">Download CV</a>
           </div>
         </div>
@@ -142,7 +142,7 @@
     </div>
     <div class="container">
       <div class="left grid">
-        <div class="image-section" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="image-section" data-aos="zoom-in">
           <span><i data-lucide="award" class="award-icon"></i>Top Rated</span>
           <div class="profile-img">
             <img src="./images/full-profile-img.jpeg" class="lazy" alt="Profile">
@@ -277,7 +277,7 @@
       <div class="projects" id="projects">
 
       </div>
-      <div class="dots" id="dots"></div>
+      <!-- <div class="dots" id="dots"></div> -->
     </div>
     <div class="blobs">
       <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
@@ -402,7 +402,7 @@
         </div>
 
         <!-- Social Icons -->
-        <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+        <div class="social-links" data-aos="fade-up">
           <a href="https://github.com/raazkumar24" class="icon" data-tooltip="GitHub"><i data-lucide="github"></i></a>
           <a href="https://www.linkedin.com/in/raj-shekhar-799898214/" class="icon" data-tooltip="LinkedIn"><i
               data-lucide="linkedin"></i></a>
@@ -413,38 +413,39 @@
           <a href="https://www.instagram.com/raaz__kumar_" class="icon" data-tooltip="Instagram"><i
               data-lucide="instagram"></i></a>
         </div>
+      </div>
 
-        <!-- Right Side: Contact Form -->
-        <div class="contact-form" data-aos="fade-up">
-          <form id="contactForm">
-            <div class="input-box">
-              <input type="text" required>
-              <label>Name</label>
-            </div>
-            <div class="input-box">
-              <input type="email" required>
-              <label>Email</label>
-            </div>
-            <div class="input-box">
-              <textarea required></textarea>
-              <label>Message</label>
-            </div>
-            <button type="submit" class="send-btn">Send Message</button>
-          </form>
-
-          <!-- Custom Alert -->
-          <div id="customAlert" class="alert">
-            <p><i data-lucide="check"></i> Message Sent Successfully!</p>
-            <button onclick="closeAlert()">OK</button>
+      <!-- Right Side: Contact Form -->
+      <div class="contact-form" data-aos="fade-up">
+        <form id="contactForm">
+          <div class="input-box">
+            <input type="text" required>
+            <label>Name</label>
           </div>
+          <div class="input-box">
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <textarea required></textarea>
+            <label>Message</label>
+          </div>
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
 
+        <!-- Custom Alert -->
+        <div id="customAlert" class="alert">
+          <p><i data-lucide="check"></i> Message Sent Successfully!</p>
+          <button onclick="closeAlert()">OK</button>
         </div>
+
       </div>
-      <div class="blobs">
-        <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
-        <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
-        <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
-      </div>
+    </div>
+    <div class="blobs">
+      <div class="blob blob1" data-aos="fade-right" data-aos-duration="2000"></div>
+      <div class="blob blob2" data-aos="fade-left" data-aos-duration="2000"></div>
+      <div class="blob blob3" data-aos="fade-up" data-aos-duration="2000"></div>
+    </div>
   </section>
   <!-- ------------------------- End Contact Section ------------------------- -->
 
@@ -453,14 +454,14 @@
   <footer>
     <div class="footer-container">
       <!-- About Section -->
-      <div class="footer-section">
+      <div class="footer-section" data-aos="fade-right">
         <h3>About Us</h3>
         <p>We are a creative team dedicated to building amazing web experiences. Let us help you bring your ideas to
           life!</p>
       </div>
 
       <!-- Quick Links -->
-      <div class="footer-section">
+      <div class="footer-section" data-aos="fade-right">
         <h3>Quick Links</h3>
         <ul>
           <li><a href="#Home">Home</a></li>
@@ -472,7 +473,7 @@
       </div>
 
       <!-- Newsletter -->
-      <div class="footer-section">
+      <div class="footer-section" data-aos="fade-left">
         <h3>Newsletter</h3>
         <p>Subscribe to our newsletter to get the latest updates and news.</p>
         <form class="newsletter-form">
@@ -482,7 +483,7 @@
       </div>
 
       <!-- Social Media -->
-      <div class="footer-section">
+      <div class="footer-section" data-aos="fade-left">
         <h3>Follow Us</h3>
         <div class="social-icons">
           <a href="https://twitter.com/RajWeb24" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
@@ -518,7 +519,12 @@
         lucide.createIcons();
       }, 100);
       // Initialize AOS (Animate on Scroll)
-      AOS.init();
+      AOS.init(
+        {
+          duration: 800, // Animation duration
+          easing: "ease-out", // Easing style
+          once: true, // Animate only once
+        });
     });
   </script>
 
