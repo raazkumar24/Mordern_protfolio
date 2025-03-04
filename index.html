@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" type="image/png" href="images/image.png">
+  <link rel="shortcut icon" type="image/png" href="images/profile-img.png" style="border-radius: 50%;">
 
   <!-- ------------------------ browser header color ------------------------- -->
   <meta name="theme-color" content="#eac4d5" media="(prefers-color-scheme: light)">
@@ -81,7 +81,7 @@
 
         <!-- Profile Image -->
         <div class="profile-img">
-          <img src="./images/profile-img.png" class="lazy" alt="Profile">
+          <img src="./images/profile-image.jpg" class="lazy" alt="Profile">
         </div>
       </div>
 
@@ -274,7 +274,7 @@
     </div>
 
     <div class="project-container">
-      <div class="projects" id="projects">
+      <div class="projects" id="projects" data-aos="fade-up">
 
       </div>
       <div class="dots" id="dots"></div>
@@ -425,6 +425,10 @@
           <div class="input-box">
             <input type="email" required>
             <label>Email</label>
+          </div>
+          <div class="input-box">
+            <input type="text" required>
+            <label>Subject</label>
           </div>
           <div class="input-box">
             <textarea required></textarea>

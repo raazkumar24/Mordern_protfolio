@@ -330,16 +330,18 @@ input:checked + .slider:before {
 }
 
 .rotating-border-1 {
-  border-color: rgba(59, 130, 246, 0.3);
+  border-color: #0062ff4d;
 }
 
 .rotating-border-2 {
   margin: 0.5rem;
-  border-color: rgba(168, 85, 247, 0.3);
+  border-color: #8400ff4d;
   animation-direction: reverse;
 }
 
 .profile-img {
+  width: 100%;
+  height: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
@@ -355,7 +357,7 @@ input:checked + .slider:before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  scale: 1.2;
+  scale: 1.3;
   transition: transform 0.3s;
   &:hover {
     transform: scale(1.1);
@@ -1374,7 +1376,7 @@ input:checked + .slider:before {
 }
 
 .send-btn {
-  background: var(--soft-lavender);
+  background: var(--gradient-button);
   color: var(--text-white-color);
   border: none;
   padding: 10px 20px;
@@ -1385,7 +1387,6 @@ input:checked + .slider:before {
 }
 
 .send-btn:hover {
-  background: var(--vivid-periwinkle);
   transform: scale(1.05);
 }
 

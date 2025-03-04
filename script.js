@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Generate projects dynamically
     projectsContainer.innerHTML = projects.map((project) => `
-        <div class="project" data-aos="fade-up">
+        <div class="project">
             <div class="image-container">
                 <img src="${project.image || 'https://images.unsplash.com/photo-1519337265831-281ec6cc8514'}" alt="${project.name || 'Project Image'}">
                 <div class="icons-overlay">
