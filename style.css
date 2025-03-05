@@ -7,6 +7,10 @@
 /* -------------------------- For Inter + Roboto ---------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap");
 
+/* -------------------------- Big Shoulders -------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+/* -------------------------- Gloria Hallelujah -------------------------- */
 @import url("~lucide-static/font/Lucide.css");
 
 
@@ -137,6 +141,10 @@ h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   color: var(--text-color-dark);
+}
+
+p {
+  font-family: "Inter", sans-serif;
 }
 
 /* --------------------------------- Header --------------------------------- */
@@ -330,12 +338,12 @@ input:checked + .slider:before {
 }
 
 .rotating-border-1 {
-  border-color: #0062ff4d;
+  border-color: #0062ff91;
 }
 
 .rotating-border-2 {
   margin: 0.5rem;
-  border-color: #8400ff4d;
+  border-color: #8400ffa5;
   animation-direction: reverse;
 }
 
@@ -490,9 +498,11 @@ input:checked + .slider:before {
 
 .title-name {
   font-size: 3rem;
-  font-weight: bold;
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 900;
   margin: 0.5rem 0;
   color: var(--text-color-dark);
+  
 }
 
 .gradient-text {
@@ -669,14 +679,15 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   text-align: center;
 }
 
 .title {
+  font-family: "Big Shoulders", sans-serif;
+  font-weight: 800;
   position: relative;
   font-size: 2rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -813,6 +824,68 @@ input:checked + .slider:before {
   color: var(--text-color-light);
 }
 
+ .button {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  background: #ffff;
+  color: black;
+  z-index: 1;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
 .right {
   display: flex;
   flex-direction: column;
@@ -851,6 +924,12 @@ input:checked + .slider:before {
   }
 }
 
+.about-skills .skill-bar span h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color-dark);
+}
+
 .about-skills .skill-bar span p {
   font-size: 0.9rem;
   color: var(--text-color-light);
@@ -860,8 +939,8 @@ input:checked + .slider:before {
   background-color: var(--dusty-blue);
   color: var(--light-blue);
   padding: 0.8rem;
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
   border-radius: 10px;
 }
 
@@ -1713,6 +1792,10 @@ footer {
   .skills-container {
     width: 100%;
     overflow: hidden;
+  }
+
+  .about-skills .skill-bar span h1 {
+    font-size: 1rem;
   }
   /* -------------------------- End of About Section -------------------------- */
 
