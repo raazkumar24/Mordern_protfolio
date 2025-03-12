@@ -8,11 +8,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Roboto:wght@300;400;600&display=swap");
 
 /* -------------------------- Big Shoulders -------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap");
 
 /* -------------------------- Gloria Hallelujah -------------------------- */
 @import url("~lucide-static/font/Lucide.css");
-
 
 /* -------------------------- Root Variables -------------------------- */
 :root {
@@ -59,6 +58,7 @@
 
   /* Borders */
   --border-color: #2a2f45;
+  --icon-border: none;
 
   /* Gradients */
   --gradient-text: linear-gradient(to right, #2563eb, #9333ea);
@@ -90,6 +90,7 @@
 
   /* Borders */
   --border-color: #555;
+  --icon-border: 1px solid #2a2f45;
 
   /* Shadows */
   /* --box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.05);
@@ -100,7 +101,6 @@
   /* Gradients */
   --gradient-bg: linear-gradient(to right, #0f172a, #312e81);
 }
-
 
 /* Set a safe global box-sizing rule */
 *,
@@ -379,6 +379,7 @@ input:checked + .slider:before {
   width: 40px;
   height: 40px;
   border-radius: 8px;
+  border: var(--icon-border);
   box-shadow: var(--box-shadow);
   animation: float 3s infinite alternate ease-in-out;
 }
@@ -502,7 +503,6 @@ input:checked + .slider:before {
   font-weight: 900;
   margin: 0.5rem 0;
   color: var(--text-color-dark);
-  
 }
 
 .gradient-text {
@@ -535,6 +535,7 @@ input:checked + .slider:before {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: var(--icon-border);
   background: var(--box-color);
   color: var(--text-color-light);
   box-shadow: var(--shadow-soft);
@@ -824,7 +825,7 @@ input:checked + .slider:before {
   color: var(--text-color-light);
 }
 
- .button {
+.button {
   display: inline-block;
   padding: 12px 28px;
   border: 1px solid #4f4f4f;
@@ -884,7 +885,6 @@ input:checked + .slider:before {
   background-color: #39bda7;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
-
 
 .right {
   display: flex;
@@ -1304,12 +1304,6 @@ input:checked + .slider:before {
 /* ----------------------- End of Experience Section ----------------------- */
 
 /* ------------------------- Start Contact Section ------------------------- */
-.contact-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .section-title {
   font-size: 2rem;
@@ -1319,7 +1313,6 @@ input:checked + .slider:before {
 .contact-info {
   flex: 1;
   width: 50%;
-  padding: 1.5rem;
   text-align: left;
 }
 
@@ -1363,13 +1356,13 @@ input:checked + .slider:before {
 }
 
 .contact-icon {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   padding: 0.5rem;
   border-radius: 12px;
   color: var(--hover-text-color);
   background-color: var(--dusty-blue);
-  transition: background-color 0.s ease-in-out;
+  transition: background-color 0s ease-in-out;
 }
 
 .detail:hover .contact-icon {
@@ -1381,14 +1374,15 @@ input:checked + .slider:before {
   width: 50%;
   padding: 1.5rem;
   text-align: left;
+  background: var(--box-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
 }
 
 .input-box {
   position: relative;
-  margin-bottom: 1.5rem;
-  background: var(--box-color);
-  border-radius: 5px 5px 0 0 ;
-  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  border-radius: 5px 5px 0 0;
 }
 
 .input-box input,
@@ -1429,19 +1423,15 @@ input:checked + .slider:before {
   transform: translateY(-20px);
   font-size: 0.8rem;
   color: var(--hover-text-color);
-  background: var(--box-color);
-  border-radius: 5px 5px 0 0 ;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
 .input-box textarea:focus + label,
 .input-box textarea:valid + label {
   transform: translateY(-45px);
   font-size: 0.8rem;
-  background: var(--box-color);
   color: var(--hover-text-color);
-  border-radius: 5px 5px 0 0 ;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 
 /* Highlight border on focus */
@@ -1659,7 +1649,6 @@ footer {
   color: var(--vivid-periwinkle);
 }
 
-
 /* -------------------------------- back-btn -------------------------------- */
 .back-btn {
   position: fixed;
@@ -1692,7 +1681,6 @@ footer {
   width: 50px;
   height: 50px;
 }
-
 
 /* ------------------------- End of footer Section ------------------------ */
 
@@ -1799,8 +1787,6 @@ footer {
   }
   /* -------------------------- End of About Section -------------------------- */
 
-
-
   /* -------------------------- Start Contact Section ------------------------- */
   .contact-container {
     flex-direction: column;
@@ -1859,7 +1845,6 @@ footer {
   /* -------------------------- End of About Section -------------------------- */
 
   /* ----------------------------- Project Section ---------------------------- */
-  
 
   /* ------------------------- End of Project Section ------------------------- */
 }
