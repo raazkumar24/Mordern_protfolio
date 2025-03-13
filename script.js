@@ -163,3 +163,36 @@ displayProjects();
   // Initialize Lucide Icons
   lucide.createIcons();
 });
+
+
+//Email js 
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("czjhCah9-cMUqjPR-"); // Your Public Key
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Send form data using EmailJS
+      emailjs.sendForm("service_pwhqi1i", "template_f68nb6a", this)
+          .then(function (response) {
+              console.log("Email sent:", response);
+              showAlert(); // Show custom alert
+              document.getElementById("contactForm").reset(); // Reset form
+          })
+          .catch(function (error) {
+              console.error("Error sending email:", error);
+              alert("Failed to send message. Please try again later.");
+          });
+  });
+});
+
+// Function to show custom alert
+function showAlert() {
+  const alertBox = document.getElementById("customAlert");
+  alertBox.style.display = "block";
+}
+
+// Function to close custom alert
+function closeAlert() {
+  document.getElementById("customAlert").style.display = "none";
+}

@@ -15,6 +15,7 @@
 
   <title>Portfolio</title>
 
+
   <!-- ------------------------------ tailwind ------------------------------ -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet"> -->
 
@@ -417,22 +418,23 @@
       </div>
 
       <!-- Right Side: Contact Form -->
+      <!-- Contact Form -->
       <div class="contact-form" data-aos="fade-up">
         <form id="contactForm">
           <div class="input-box">
-            <input type="text" required>
+            <input type="text" name="name" required>
             <label>Name</label>
           </div>
           <div class="input-box">
-            <input type="email" required>
+            <input type="email" name="email" required>
             <label>Email</label>
           </div>
           <div class="input-box">
-            <input type="text" required>
+            <input type="text" name="subject" required>
             <label>Subject</label>
           </div>
           <div class="input-box">
-            <textarea required></textarea>
+            <textarea name="message" required></textarea>
             <label>Message</label>
           </div>
           <button type="submit" class="send-btn">Send Message</button>
@@ -440,7 +442,7 @@
       </div>
 
       <!-- Custom Alert -->
-      <div id="customAlert" class="alert">
+      <div id="customAlert" class="alert" style="display: none;">
         <p><i data-lucide="checkbox"></i> Message Sent Successfully!</p>
         <button onclick="closeAlert()">OK</button>
       </div>
@@ -458,7 +460,7 @@
 
   <!-- ------------------------- Start Footer ------------------------- -->
   <footer>
-   
+
     <!-- Footer Bottom -->
     <div class="footer-bottom">
       <p>&copy; 2025 Raj Shekhar. All rights reserved. | <a href="#">Privacy Policy</a></p>
@@ -466,7 +468,7 @@
   </footer>
 
 
-<!-- ----------------------------- Back to top ----------------------------- -->
+  <!-- ----------------------------- Back to top ----------------------------- -->
   <div class="back-btn">
     <i data-lucide="arrow-up"></i>
     <p>Back to Top</p>
@@ -491,6 +493,8 @@
         });
     });
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 
 </body>
 
